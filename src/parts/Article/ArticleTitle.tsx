@@ -2,6 +2,8 @@ import * as React from 'react';
 
 import { defaultTheme as theme } from '../../style/themes';
 
+import './Article.css';
+
 
 interface IArticleTitleProps {
     text: string;
