@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Dispatch } from 'redux';
 import { connect } from 'react-redux';
 import Helmet from 'react-helmet';
-import { createBrowserHistory } from 'history';
 
 import HomePage from './pages/HomePage';
 import UserPage from './pages/UserPage';
@@ -21,9 +20,7 @@ import { IAuthReducerState } from './parts/Auth/AuthReducer';
 import { getEditorSessionData } from './parts/ApiCaller/ApiCaller';
 import { IEditorSessionUser } from './parts/ApiCaller/ApiCaller.d';
 import { getSubdomainConfig } from './subdomains';
-import { isLocalhost } from './util';
 import * as mu from './metaUtils';
-import { pageview, defaultPageViewLogCallback } from './ua';
 
 import { defaultTheme as theme } from './style/themes';
 import './App.css';
@@ -31,12 +28,12 @@ import './style/global.css';
 
 const subdomainConfig = getSubdomainConfig();
 
-const history = createBrowserHistory();
-
 /**
  * Google Analytics / Universal Analytics
  */
 
+/*
+const history = createBrowserHistory();
 // Analytics: Sending on first load
 setTimeout(() => {
   console.log('[first-load] sending pageview of pathname:', window.location.pathname);
@@ -55,6 +52,7 @@ history.listen((location, action) => {
               defaultPageViewLogCallback('[history.listen]'));
   }
 })
+*/
 
 const backgroundStyle = { 
   backgroundImage: theme.backgroundColor
