@@ -16,7 +16,7 @@
     "@types/sanitize-html": "^1.18.3",
     "@types/showdown": "^1.9.3",
     "@types/universal-analytics": "^0.4.2",
-    "axios": "^0.19.0",
+    "axios": "^0.27.2",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "react": "^16.8.6",
@@ -25,12 +25,11 @@
     "react-redux": "^7.0.3",
     "react-router": "^5.0.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^5.0.1",
     "redux": "^4.0.1",
-    "sanitize-html": "^1.20.1",
+    "sanitize-html": "^2.7.0",
     "showdown": "^1.9.1",
-    "typescript": "3.5.1",
-    "universal-analytics": "^0.4.20"
+    "typescript": "3.5.1"
   },
   "scripts": {
     "start": "react-scripts start",

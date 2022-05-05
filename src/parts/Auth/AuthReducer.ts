@@ -19,7 +19,7 @@ const defaultState: IAuthReducerState = {
     isAuthenticated: false
 }
 
-export default (state=defaultState, action: AnyAction): IAuthReducerState => {
+const AuthReducer = (state=defaultState, action: AnyAction): IAuthReducerState => {
     switch(action.type) {
         case actions.SUCCEED_SESSION_DATA_FETCH: {
             const { user } = action;
@@ -56,3 +56,5 @@ export default (state=defaultState, action: AnyAction): IAuthReducerState => {
         default: return state;
     }
 }
+
+export default AuthReducer;
