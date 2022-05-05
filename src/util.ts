@@ -219,7 +219,7 @@ interface IObjectWithId {
 // HTML Sanitize
 const ALLOWED_HTML_ARTICLE_CONTENT_TAGS = [ 
   // ours:
-  'img', 'h2', 'twitter-widget',
+  'img', 'h1', 'h2', 'twitter-widget',
   // defaults:
   'h3', 'h4', 'h5', 'h6', 'blockquote', 'p', 'a', 'ul', 'ol',
   'nl', 'li', 'b', 'i', 'strong', 'em', 'strike', 'code', 'hr', 'br', 'div',
