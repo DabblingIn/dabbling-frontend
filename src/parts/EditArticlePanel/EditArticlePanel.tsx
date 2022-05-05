@@ -29,8 +29,8 @@ import ItemBox from '../ItemBox/ItemBox';
 
 import { getSubKey, isMegaSub } from '../../subdomains';
 
-import { defaultTheme as theme } from '../../style/themes';
 import "./EditArticlePanel.css";
+import ArticleTitle from 'parts/Article/ArticleTitle';
 
 export enum EditorModes {
     MD,
@@ -509,7 +509,7 @@ export default class EditArticlePanel extends React.Component<IEditArticlePanelP
                     <div>
                         <h3 className="edit-article-panel__form-label">Preview</h3>
                         <div className="edit-article-panel__content-preview">
-                            <h1 className="article__title" style={theme.articleTitleStyle}>{articleTitle}</h1>
+                            <ArticleTitle text={articleTitle} />
                             <div dangerouslySetInnerHTML={this.setPreviewHTML()}/>
                         </div>
                     </div>
