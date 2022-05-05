@@ -4,9 +4,9 @@ import * as mu from '../../metaUtils';
 
 import * as util from '../../util';
 import ItemBox from '../ItemBox/ItemBox';
+import ArticleTitle from './ArticleTitle';
 import { IGetArticleData } from '../ApiCaller/ApiCaller.d';
 
-import { defaultTheme as theme } from '../../style/themes';
 import './Article.css';
 
 export interface IArticleProps extends IGetArticleData {};
@@ -29,9 +29,7 @@ export default function Article(props: IArticleProps) {
 
         <ItemBox>
         <article className="article">
-            <h1 className="article__title" style={theme.articleTitleStyle}>
-                {props.articleTitle}
-            </h1>
+            <ArticleTitle text={props.articleTitle} />
             <div className="article__name-date-line">
                 <span className="article__author-date-box">
                     <a className="article__author" href={util.userPageLink(props.authorUsername)}>{props.authorName} (<b>{props.authorUsername}</b>)</a>
