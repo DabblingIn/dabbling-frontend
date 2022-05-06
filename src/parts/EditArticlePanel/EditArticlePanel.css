@@ -45,6 +45,11 @@
 
 
 /* EditArticlePreview */
+.edit-article-panel__preview {
+    max-width: 900px;
+    margin: auto;
+}
+
 .edit-article-panel__preview-header {
     font-family: 'Lato', sans-serif;
 }
@@ -57,7 +62,6 @@
     border-color: #555;
     border-style: solid;
     width: 100%;
-    max-width: 900px;
     height: 30em;
     overflow: auto;
     padding: 0px 5px;

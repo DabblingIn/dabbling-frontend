@@ -506,7 +506,7 @@ export default class EditArticlePanel extends React.Component<IEditArticlePanelP
                         {newArticle ? 'CREATE' : 'UPDATE'}
                     </button>
                     
-                    <div>
+                    <div className="edit-article-panel__preview">
                         <h3 className="edit-article-panel__preview-header">Preview</h3>
                         <div className="edit-article-panel__preview-content">
                             <ArticleTitle text={articleTitle} />
