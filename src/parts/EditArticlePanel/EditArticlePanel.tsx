@@ -507,8 +507,8 @@ export default class EditArticlePanel extends React.Component<IEditArticlePanelP
                     </button>
                     
                     <div>
-                        <h3 className="edit-article-panel__form-label">Preview</h3>
-                        <div className="edit-article-panel__content-preview">
+                        <h3 className="edit-article-panel__preview-header">Preview</h3>
+                        <div className="edit-article-panel__preview-content">
                             <ArticleTitle text={articleTitle} />
                             <div dangerouslySetInnerHTML={this.setPreviewHTML()}/>
                         </div>
