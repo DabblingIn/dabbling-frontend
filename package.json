@@ -18,7 +18,7 @@
     "@types/universal-analytics": "^0.4.2",
     "axios": "^0.27.2",
     "classnames": "^2.2.6",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
