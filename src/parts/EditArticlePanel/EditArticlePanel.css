@@ -52,12 +52,18 @@
 .edit-article-panel__preview-content {
     font-family: 'Lato', sans-serif;
     position: static;
-    margin: 5px 0px;
+    margin: 5px auto;
     border-width: 1px;
     border-color: #555;
     border-style: solid;
     width: 100%;
+    max-width: 900px;
     height: 30em;
-    overflow: scroll;
+    overflow: auto;
     padding: 0px 5px;
+}
+
+.edit-article-panel__preview-content::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
 }
