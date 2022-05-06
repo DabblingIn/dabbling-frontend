@@ -101,7 +101,7 @@ function ArticleErrorPopup(props: IArticleErrorPopupProps) {
             <Helmet>
                 <title>Error</title>
             </Helmet>
-            <ItemBox classNames="article-page__error-popup" styleOverride={{ margin: 'auto', maxWidth: 900 }}>
+            <ItemBox classNames="article-page__error-popup">
                 <h1 className="article-page__error-popup__header">Error</h1>
                 <p className="article-page__error-popup__text">{props.message}</p>
             </ItemBox>

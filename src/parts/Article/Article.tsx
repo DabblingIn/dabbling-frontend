@@ -27,7 +27,7 @@ export default function Article(props: IArticleProps) {
             description={props.articleDescription}
         />
 
-        <ItemBox>
+        <ItemBox  styleOverride={{ margin: 'auto', maxWidth: 900 }}>
         <article className="article">
             <ArticleTitle text={props.articleTitle} />
             <div className="article__name-date-line">
